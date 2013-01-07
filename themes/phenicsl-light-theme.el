@@ -13,7 +13,7 @@
       (phenicsl-green-2 "#4F834F")
       (phenicsl-green-3 "#A8FF60")
       (phenicsl-green-4 "#99CC99")
-      (phenicsl-green-5 "#DDFFD1")
+      (phenicsl-green-5 "#DDFFDD")
       (phenicsl-gray-1 "#BFBFBF")
       (phenicsl-gray-2 "#F1F1F1")
       (phenicsl-gray-3 "#F2F2F2")
@@ -31,6 +31,7 @@
       (phenicsl-red-3 "#9C6363")
       (phenicsl-red-4 "#AC7171")
       (phenicsl-red-5 "#B22222")
+      (phenicsl-red-6 "#FFDDDD")
       (phenicsl-yellow-1 "#FFFFB6")
       (builtin-color "#D16040")
       (comment-color "#BFBFBF")
@@ -44,7 +45,7 @@
   (custom-theme-set-faces
    'phenicsl-light
    ;; setup inheritance
-   `(default ((t (:background "#FEFEFE" :foreground "#0F0F0F"))))
+   `(default ((t (:background "#FCFCFC" :foreground "#0F0F0F"))))
    `(fringe ((t  (:background "#F2F2F2"))))
    `(hl-line ((t (:background "#F2F2F2"))))
    `(region ((t (:background "#FFFFB6"))))
@@ -59,7 +60,7 @@
    `(font-lock-string-face ((t (:foreground "#AC7171"))))
    `(font-lock-type-face ((t (:foreground  "#4F834F" :weight bold))))
    `(font-lock-warning-face ((t (:foreground "#171717" :background "#FFFFB6"))))
-   `(font-lock-variable-name-face ((t (:foreground "#2F2F2F"))))
+   `(font-lock-variable-name-face ((t (:foreground "#070707"))))
    `(font-lock-regexp-grouping-backslash ((t (:foreground "#4F834F" :weight bold))))
    `(font-lock-regexp-grouping-construct ((t (:foreground "#228B57" :weight bold))))
    `(font-lock-doc-face ((t (:foreground "#C1C1C1"))))
@@ -75,7 +76,7 @@
    `(rst-level-4-face ((t (:foreground "#228B57" :weight bold))))
    `(rst-level-5-face ((t (:foreground "#603C67" :weight bold))))
    `(rst-level-6-face ((t (:foreground "#AF5F77" :weight bold))))
-   `(rst-block ((t (:foreground "#E55A4F" :weight bold))))
+   `(rst-block ((t (:foreground "#228B57" :weight bold))))
 
    `(org-level-1 ((t (:foreground "#4C708F" :weight bold))))
    `(org-level-2 ((t (:foreground "#415591" :weight bold))))
@@ -94,6 +95,11 @@
    `(rainbow-delimiters-depth-7-face ((t (:foreground "#00A0A0"))))
    `(rainbow-delimiters-depth-8-face ((t (:foreground "#4F8C4F"))))
    `(rainbow-delimiters-depth-9-face ((t (:foreground "#B22222"))))
+   
+   `(eshell-prompt ((t (:foreground "#B22222" :weight bold))))
+   `(eshell-ls-directory ((t (:foreground "#4C708F" :weight bold))))
+   `(eshell-ls-executable ((t (:foreground "#4F8C4F"))))
+   `(eshell-ls-symlink ((t (:foreground "#00A0A0"))))
 
    `(modeline ((t (:background "#3A3A3A" :foreground "#FFFFFF"))))
    `(modeline-inactive ((t (:background "#4F4F4F" :foreground "#AAAAAA"))))
@@ -102,7 +108,7 @@
    `(modeline-mousable-minor-mode ((t (:background "#CCCCCC" :foreground "#FFFFFF"))))
 
    `(minibuffer-prompt ((t (:foreground "#414E91" :weight bold))))
-   `(yas/field-highlight-face ((t (:background "#666666" :foreground "#ffff00"))))
+   `(yas/field-highlight-face ((t (:background "#666666" :foreground "#FFFFB6"))))
    `(info-node ((t (:foreground "#B22222" :slant italic :weight bold))))
    `(link ((t (:foreground "#414E91" :underline t :weight bold))))
    `(link-visited ((t (:foreground "#B22222" :weight bold))))))

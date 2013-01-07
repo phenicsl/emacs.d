@@ -9,10 +9,11 @@
 ;; configure appearance
 (set-default-font "monaco-9.4")
 
-(dolist (charset '(kana han symbol cjk-misc bopomofo))
-    (set-fontset-font (frame-parameter nil 'font)
-                      charset
-                      (font-spec :family "Microsoft Yahei" :size 12)))
+(if (not (is-tty))
+    (dolist (charset '(kana han symbol cjk-misc bopomofo))
+      (set-fontset-font (frame-parameter nil 'font)
+			charset
+			(font-spec :family "Microsoft Yahei" :size 12))))
 
 (setq inhibit-splash-screen t)
 (global-font-lock-mode t)
