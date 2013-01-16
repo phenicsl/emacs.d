@@ -35,8 +35,12 @@
 
 (global-set-key "\M-w" 'clipboard-kill-ring-save)
 
-(global-set-key [?\S- ] 'set-mark-command)
+;(global-set-key [?\S- ] 'set-mark-command)
 
 ;;; aspell
 (setq-default ispell-program-name "aspell")
 
+;;; windmove mode
+(windmove-default-keybindings)
+
+(require 'table)

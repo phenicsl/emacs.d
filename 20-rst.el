@@ -8,3 +8,7 @@
 	(94 simple 0)
 	(35 simple 0)
 	(64 simple 0)))
+
+(add-hook 'rst-mode-hook (lambda ()
+			    (table-recognize)))
+

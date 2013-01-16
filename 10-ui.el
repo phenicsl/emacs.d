@@ -8,6 +8,10 @@
 
 ;; configure appearance
 (set-default-font "monaco-9.4")
+;(set-default-font "dejavu sans mono-9")
+
+(setq default-frame-alist '((font . "monaco-9.4")
+			    (vertical-scroll-bars . nil)))
 
 (if (not (is-tty))
     (dolist (charset '(kana han symbol cjk-misc bopomofo))

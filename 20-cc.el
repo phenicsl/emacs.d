@@ -10,7 +10,7 @@
 			 (setq indent-tabs-mode nil)
 			 (electric-pair-mode)
 			 (linum-mode)
-			 (rainbow-delimiers-mode)
+			 (rainbow-delimiters-mode)
 			 (setq show-trailing-whitespace t)))
 
 (add-hook 'c-mode-hook 'hs-minor-mode)
