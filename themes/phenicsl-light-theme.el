@@ -131,7 +131,7 @@
    `(ido-only-match ((t (:foreground "#4F8C4F"))))
    `(ido-indicator ((t (:foreground "#D16040" :background "#FFFFB6" :weight bold))))
    
-   `(show-paren-match ((t (:background "#FFFFB6" :weight bold))))
+   `(show-paren-match ((t (:weight bold))))
    `(show-paren-mismatch ((t (:background "#FFAAAA"))))
    `(minibuffer-prompt ((t (:foreground "#414E91" :weight bold))))
    `(yas/field-highlight-face ((t (:background "#FFFFB6" :foreground "#171717"))))

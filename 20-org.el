@@ -41,8 +41,7 @@
 (define-key global-map [(control meta ?r)] 'remember)
 
 
-(setq org-agenda-files (list "~/org/personal.org" 
-			     "~/org/work.org")
+(setq org-agenda-files (list "~/org/work.org")
       org-default-notes-file "~/org/notes.org"
       org-agenda-ndays 7
       org-deadline-warning-days 14

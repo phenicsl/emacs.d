@@ -69,3 +69,4 @@
     (load-theme 'phenicsl-light t)
   (load-theme 'phenicsl-dark t))
 
+(require 'rainbow-delimiters)

@@ -46,8 +46,9 @@
    `(org-level-4 ((t (:inherit outline-4 :weight bold))))
    `(org-level-7 ((t (:inherit outline-7 :weight bold))))
    `(org-level-8 ((t (:inherit outline-8 :weight bold))))
-   `(org-table ((t (:foreground "#0087ff" :background nil))))
+   `(org-table ((t (:foreground "#AAAAAA" :background nil))))
    `(org-date ((t (:foreground "#af5fff" :background nil))))
+
    `(modeline ((t (:background "#414141" :foreground "#AAAAAA"))))
    `(modeline-inactive ((t (:background "#3C3C3C" :foreground "#777777"))))
    `(modeline-buffer-id ((t (:background "#3C3C3C" :foreground "#FF875F"))))
