@@ -1,12 +1,16 @@
 (deftheme phenicsl-dark "Private Theme by Phenicsl")
 
 
-(let ((builtin-color "#FFC5AA")
-      (comment-color "magenta")
-      (constant-color "#99C9CC")
-      (function-color "blue")
-      (keyword-color "#FF875F")
-      (preprocessor-color "#AFC4DB"))
+(let ((phenicsl-orange-1 "#FFC5AA")
+      (phenicsl-orange-2 "#D16040")
+      (phenicsl-cyan-1 "#99C9CC")
+      (phenicsl-blue-1 "#0000EE")
+      (phenicsl-blue-2 "#AFC4DB")
+      (phenicsl-blue-3 "#4C708F")
+      (phenicsl-blue-4 "#98C1D8")
+      (phenicsl-purple-1 "#AF5FFF")
+      (phenicsl-purple-2 "#AF5F9F")
+      (phenicsl-brown-1 "#FF875F"))
 
   (custom-theme-set-faces
    'phenicsl-dark
@@ -15,18 +19,13 @@
    `(hl-line ((t (:background "color-234"))))
    `(region ((t (:background "#D75F5F" :forground "white"))))
    `(font-lock-builtin-face ((t (:foreground "#FFC5AA"))))
-   ;`(font-lock-comment-face ((t (:foreground "magenta"))))
-   ;`(font-lock-comment-delimiter-face ((t (:foreground "magenta"))))
    `(font-lock-comment-face ((t (:foreground "#4C4C4C"))))
    `(font-lock-comment-delimiter-face ((t (:foreground "#4C4C4C"))))
    `(font-lock-constant-face ((t (:foreground "#99C9CC" :weight bold))))
    `(font-lock-function-name-face ((t (:foreground "#678FCC" :weight bold))))
-   ;`(font-lock-function-name-face ((t (:foreground "#678FCC" :weight bold))))
    `(font-lock-function-name-face ((t (:foreground "#0000EE" :weight bold))))
    `(font-lock-keyword-face ((t (:foreground "#FF875F" :weight bold))))
-   ;`(font-lock-keyword-face ((t (:foreground "#B294BB" :weight bold))))
    `(font-lock-preprocessor-face ((t (:foreground "#AFC4DB" :weight bold))))
-   ;`(font-lock-string-face ((t (:foreground "#9CEE9C"))))
    `(font-lock-string-face ((t (:foreground "#B294BB"))))
    `(font-lock-type-face ((t (:foreground  "#68C1D8" :weight bold))))
    `(font-lock-variable-name-face ((t (:foreground "#FFFFFF"))))
@@ -48,7 +47,18 @@
    `(org-level-8 ((t (:inherit outline-8 :weight bold))))
    `(org-table ((t (:foreground "#AAAAAA" :background nil))))
    `(org-date ((t (:foreground "#af5fff" :background nil))))
+   
+   `(rainbow-delimiters-depth-1-face ((t (:foreground "#D3D3D3"))))
+   `(rainbow-delimiters-depth-2-face ((t (:foreground "#D3D3FF"))))
+   `(rainbow-delimiters-depth-3-face ((t (:foreground "#FFD3D3"))))
+   `(rainbow-delimiters-depth-4-face ((t (:foreground "#D3FFD3"))))
+   `(rainbow-delimiters-depth-5-face ((t (:foreground "#FFFFD3"))))
+   `(rainbow-delimiters-depth-6-face ((t (:foreground "#FFD3FF"))))
+   `(rainbow-delimiters-depth-7-face ((t (:foreground "#D3FFFF"))))
+   `(rainbow-delimiters-depth-8-face ((t (:foreground "#D3D3FF"))))
+   `(rainbow-delimiters-depth-9-face ((t (:foreground "#FFD3D3"))))
 
+   `(show-paren-match ((t (:weight bold))))
    `(modeline ((t (:background "#414141" :foreground "#AAAAAA"))))
    `(modeline-inactive ((t (:background "#3C3C3C" :foreground "#777777"))))
    `(modeline-buffer-id ((t (:background "#3C3C3C" :foreground "#FF875F"))))
@@ -59,4 +69,6 @@
    `(info-node ((t (:foreground "#FF875F" :slant italic :weight bold))))
    `(link ((t (:foreground "#00ffff" :underline t))))
    `(link-visited ((t (:foreground "magenta"))))))
+
+
 
