@@ -58,7 +58,7 @@
    `(default ((t (:background "#FAFAFA" :foreground "#0F0F0F"))))
    `(fringe ((t  (:background "#F2F2F2"))))
    `(hl-line ((t (:background "#F2F2F2"))))
-   `(region ((t (:background "#FFFFB6"))))
+   `(region ((t (:background "#FFFFB6" :foreground "#3A3A3A"))))
    '(cursor ((t (:background "#3A3A3A"))))
    ;`(font-lock-builtin-face ((t (:foreground "#D35A4F" :weight bold))))
    `(font-lock-builtin-face ((t (:foreground "#4F8C4F" :weight bold))))
@@ -82,14 +82,14 @@
    `(linum ((t (:background "#3F3F3F" :foreground "#FFFFFF" :width expanded))))
    `(highlight ((t (:background "#FFFFB6"))))
    `(lazy-highlight ((t (:background "#FFFFB6"))))
-   `(trailing-whitespace ((t (:background "#F2F2F2"))))
+   `(trailing-whitespace ((t (:background "#FFDDDD"))))
 
-   `(rst-level-1-face ((t (:foreground "#415591" :weight bold :background nil))))
-   `(rst-level-2-face ((t (:foreground "#2481AF" :weight bold :background nil))))
-   `(rst-level-3-face ((t (:foreground "#D16040" :weight bold))))
-   `(rst-level-4-face ((t (:foreground "#4F8C4F" :weight bold))))
-   `(rst-level-5-face ((t (:foreground "#603C67" :weight bold))))
-   `(rst-level-6-face ((t (:foreground "#AF5F77" :weight bold))))
+   `(rst-level-1 ((t (:foreground "#415591" :weight bold :background nil))))
+   `(rst-level-2 ((t (:foreground "#2481AF" :weight bold :background nil))))
+   `(rst-level-3 ((t (:foreground "#D16040" :weight bold :background nil))))
+   `(rst-level-4 ((t (:foreground "#4F8C4F" :weight bold :background nil))))
+   `(rst-level-5 ((t (:foreground "#603C67" :weight bold :background nil))))
+   `(rst-level-6 ((t (:foreground "#AF5F77" :weight bold :background nil))))
    `(rst-block ((t (:foreground "#BC5151" :weight bold))))
    `(rst-external ((t (:foreground "#41914F" :weight bold))))
    
@@ -111,26 +111,43 @@
    `(rainbow-delimiters-depth-7-face ((t (:foreground "#2481AF"))))
    `(rainbow-delimiters-depth-8-face ((t (:foreground "#4F8C4F"))))
    `(rainbow-delimiters-depth-9-face ((t (:foreground "#B22222"))))
-   
+  
    `(eshell-prompt ((t (:foreground "#8F3333" :weight bold))))
    `(eshell-ls-directory ((t (:foreground "#415591" :weight bold))))
    `(eshell-ls-executable ((t (:foreground "#4F8C4F"))))
    `(eshell-ls-symlink ((t (:foreground "#00A0A0"))))
 
-   `(modeline ((t (:background "#3A3A3A" :foreground "#FFFFFF" :box nil))))
-   `(modeline-highlight ((t (:background "#00A0A0" :box nil))))
-   `(modeline-inactive ((t (:background "#4F4F4F" :foreground "#AAAAAA"))))
-   `(modeline-buffer-id ((t (:background "#D16040" :foreground "#FFFFFF"))))
-   `(modeline-mousable ((t (:background "#CCCCCC" :foreground "#FFFFFF"))))
-   `(modeline-mousable-minor-mode ((t (:background "#CCCCCC" :foreground "#FFFFFF"))))
-   
+   `(mode-line ((t (:background "#2A2A2A" :foreground "#CCCCCC" :box nil))))
+   `(mode-line-highlight ((t (:foreground "#FFFFFF" :background "#2A2A2A" :box nil))))
+   `(mode-line-emphasis ((t (:foreground "#FFFFFF" :background "#2A2A2A" :box nil))))
+   `(mode-line-inactive ((t (:background "#4F4F4F" :foreground "#AAAAAA" :box nil))))
+   `(mode-line-buffer-id ((t (:foreground "#FFC5AA" :weight bold :box nil))))
+   `(mode-line-mousable ((t (:foreground "#FFFFFF" :background "#2A2A2A" :box nil))))
+   `(mode-line-mousable-minor-mode ((t (:background "#2A2A2A" :foreground "#FFFFFF" :box nil))))
+
+   `(powerline-active1 ((t (:background "#D64937" :forground "#EEEEEE" :box nil))))
+   `(powerline-active2 ((t (:background "#3A3A3A" :forground "#EEEEEE" :box nil))))
+   `(powerline-inactive1 ((t (:background "#5A5A5A" :forground "#AAAAAA" :box nil))))
+   `(powerline-inactive2 ((t (:background "#4A4A4A" :forground "#AAAAAA" :box nil))))
+
    `(sh-heredoc ((t (:foreground "#AC7171"))))
    `(sh-quoted-exec ((t (:foreground "#D35A4E"))))
    
    `(ido-subdir ((t (:foreground "#2481AF"))))
    `(ido-only-match ((t (:foreground "#4F8C4F"))))
    `(ido-indicator ((t (:foreground "#D16040" :background "#FFFFB6" :weight bold))))
-   
+
+   '(ac-candidate-face ((t (:background "#F1F1F9" :foreground "#333333"))))
+   '(ac-candidate-mouse-face ((t (:background "#555555" :foreground "#FFFFFF"))))
+   '(ac-selection-face ((t (:background "#555555" :foreground "#FFFFFF"))))
+   '(popup-face ((t (:background "#F1F1F1" :foreground "#333333"))))
+   '(popup-isearch-match ((t (:background "#555555"))))
+   '(popup-menu-mouse-face ((t (:background "#555555" :foreground "#FFFFFF"))))
+   '(popup-menu-selection-face ((t (:background "#555555" :foreground "#FFFFFF"))))
+   '(popup-scroll-bar-foreground-face ((t (:background "#222222"))))
+   '(popup-scroll-bar-background-face ((t (:background "#555555"))))
+   '(popup-tip-face ((t (:background "#777777" :foreground "#FFFFFF"))))
+
    `(show-paren-match ((t (:weight bold))))
    `(show-paren-mismatch ((t (:background "#FFAAAA"))))
    `(minibuffer-prompt ((t (:foreground "#414E91" :weight bold))))
@@ -138,4 +155,3 @@
    `(info-node ((t (:foreground "#B22222" :slant italic :weight bold))))
    `(link ((t (:foreground "#414E91" :underline t :weight bold))))
    `(link-visited ((t (:foreground "#B22222" :weight bold))))))
-

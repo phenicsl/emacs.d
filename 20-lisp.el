@@ -8,6 +8,6 @@
 	  (lambda ()
 	    (linum-mode)
 	    (local-set-key [(return)] 'emacs-lisp-indent-newline)
-	    (rainbow-delimiters-mode)
+;	    (rainbow-delimiters-mode)
 	    (setq show-trailing-whitespace t)))
 

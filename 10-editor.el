@@ -17,7 +17,21 @@
 (require 'ido)
 (ido-mode t)
 (ido-toggle-regexp)
+(defadvice ido-find-file
+  (before auto-refresh-ido nil activate)
+  (setq ido-rescan t))
+(ido-everywhere 1)
+(ido-vertical-mode t)
+
+
+
+;(setq ido-use-faces nil)
+;(setq flx-ido-use-faces nil)
 (icomplete-mode)
+
+(require 'smex)
+(smex-initialize)
+(global-set-key (kbd "M-x") 'smex)
 
 ;;; Uniquify | unique file buffer name
 (require 'uniquify)
@@ -38,9 +52,11 @@
 ;(global-set-key [?\S- ] 'set-mark-command)
 
 ;;; aspell
-(setq-default ispell-program-name "aspell")
+;(setq-default ispell-program-name "aspell")
 
 ;;; windmove mode
 (windmove-default-keybindings)
 
 (require 'table)
+
+(global-undo-tree-mode)

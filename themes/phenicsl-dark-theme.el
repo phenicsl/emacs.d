@@ -14,16 +14,18 @@
 
   (custom-theme-set-faces
    'phenicsl-dark
-   `(default ((t (:background "#303030" :foreground "#CCCCCC"))))
-   `(fringe ((t  (:background "#3A3A3A" :foreground "#CCCCCC"))))
+   ;`(default ((t (:background "#303030" :foreground "#CCCCCC"))))
+   `(default ((t (:background "#303030" :foreground "#EFEFEF"))))
+   `(fringe ((t  (:background "#3a3a3a" :foreground "#EFEFEF"))))
    `(hl-line ((t (:background "color-234"))))
    `(region ((t (:background "#D75F5F" :forground "white"))))
+   '(cursor ((t (:background "#EFEFEF"))))
    `(font-lock-builtin-face ((t (:foreground "#FFC5AA"))))
    `(font-lock-comment-face ((t (:foreground "#4C4C4C"))))
    `(font-lock-comment-delimiter-face ((t (:foreground "#4C4C4C"))))
    `(font-lock-constant-face ((t (:foreground "#99C9CC" :weight bold))))
    `(font-lock-function-name-face ((t (:foreground "#678FCC" :weight bold))))
-   `(font-lock-function-name-face ((t (:foreground "#0000EE" :weight bold))))
+;   `(font-lock-function-name-face ((t (:foreground "#0000EE" :weight bold))))
    `(font-lock-keyword-face ((t (:foreground "#FF875F" :weight bold))))
    `(font-lock-preprocessor-face ((t (:foreground "#AFC4DB" :weight bold))))
    `(font-lock-string-face ((t (:foreground "#B294BB"))))

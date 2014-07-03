@@ -12,4 +12,7 @@
 (add-hook 'nxml-mode-hook (lambda()
 			    (linum-mode)
 			    (setq rng-validate-mode nil)
+			    (setq tab-width 2)
+			    (setq indent-tabs-mode nil)
+			    (rainbow-delimiters-mode)
 			    (setq nxml-slash-auto-complete-flag t)))

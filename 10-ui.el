@@ -7,13 +7,14 @@
     nil))
 
 ;; configure appearance
-(set-default-font "monaco-9.4")
-;(set-default-font "dejavu sans mono-9")
+;(set-default-font "DejaVu Sans Mono-9")
+(set-default-font "Ubuntu Mono-10.5")
+(set-default-font "Monaco-9")
 
-(setq default-frame-alist '((font . "monaco-9.4")
+(setq default-frame-alist '((font . "Monaco-9")
 			    (vertical-scroll-bars . nil)))
 
-(if (not (is-tty))
+(if (display-graphic-p)
     (dolist (charset '(kana han symbol cjk-misc bopomofo))
       (set-fontset-font (frame-parameter nil 'font)
 			charset
@@ -25,7 +26,7 @@
 (setq-default transient-mark-mode t)
 (setq next-line-add-newline nil)
 
-(if (not (is-tty))
+(if (display-graphic-p)
     (progn
       (set-scroll-bar-mode nil)
       (tool-bar-mode -1)
@@ -65,7 +66,14 @@
 ;; theme
 (add-to-list 'custom-theme-load-path "~/emacs.d/themes")
 
-(if (not (is-tty))
+(if (display-graphic-p)
     (load-theme 'phenicsl-light t)
+    ;(load-theme 'gtk-ide t)
   (load-theme 'phenicsl-dark t))
 
+(if (display-graphic-p)
+    (progn
+      (add-to-list 'load-path "~/.emacs.d/elpa/powerline")
+      (require 'powerline)
+      (powerline-default-theme)
+      (setq powerline-default-separator 'arrow)))
